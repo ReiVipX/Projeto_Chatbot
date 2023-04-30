@@ -1,3 +1,30 @@
 {
-    
+    "script":{
+        "script_inicial": "BEM VINDO(A), meu nome é Alex e estou aqui para te ajudar hoje, tenho algumas opções disponiveis no momento, caso queira caso esteja precisando de ajuda escreva *AJUDA*, caso queira uma recomendação de jogo escreva *RECOMENDAR*",
+        "script_default": "Desculpe não entendi, por favor garanta que o a mensagem esta escrita corretamente",
+        "ajuda":{
+            "script_ajuda":"Aqui estão algumas opções: escreva *faq* para ver as perguntas frequentes, escreva *site* para ver algumas informações sobre o site ou escreva *contatos* para ver sobre nossos meios de contato",
+            "faq":[
+                ["texto_pergunta1", "texto_resposta1", 542],
+                ["texto_pergunta2", "texto_resposta2", 2342],
+                ["texto_pergunta3", "texto_resposta3", 409542]
+            ],
+            "sobre_site":[
+                ["texto_pergunta1", "texto_resposta1"],
+                ["texto_pergunta1", "texto_resposta1"],
+                ["texto_pergunta1", "texto_resposta1"]
+            ],
+            "contatos":[
+                "texto_contato1",
+                "texto_contato2",
+                "texto_contato3"
+            ]
+        },
+        "recomendar":{
+
+        }
+    },
+    "biblioteca_palavras":{
+
+    }
 }

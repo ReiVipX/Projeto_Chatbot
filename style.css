@@ -34,19 +34,19 @@ footer{
     right: 3vw;
 }
 #botao{
-    display: none;
+    display: flex;
 }
 
 /*  
     AQUI TEMOS A PARTE DA JANELA DO CHATBOT 
 */
 .chatbot_window{
-    display: flex;
+    display: none;
     text-align: center;
     justify-items: center;
     flex-direction: column;
     background-color: beige;
-    height: 75vh;
+    height: 88vh;
     width: 25vw;
     border: 3px solid;
     transition: ease;
@@ -73,15 +73,16 @@ p#chatbot_exit{
     font-weight: bolder;
     height: 100%;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 3px solid rgb(0, 0, 0);
     border-top: 3px solid rgb(0, 0, 0);
 }
 .chatbot_text p{
     background-color: #e8f082d5;
-    
-    margin: 5px 20px 0px 20px;
-    padding: 3px 10px 3px 10px;
+    margin: 10px 20px 0px 20px;
+    padding: 5px 10px 5px 10px;
     text-align: left;
     overflow-wrap: break-word;
 }
