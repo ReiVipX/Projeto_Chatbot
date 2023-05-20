@@ -85,7 +85,7 @@ function search_memory(jsonObject, input){
       chatbot_response_text();
       break
     default:
-      chatbot_response_text(script.default);
+      chatbot_response_text(script.script_default);
       break
   }
 }
