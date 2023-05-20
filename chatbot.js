@@ -61,7 +61,7 @@ function search_memory(jsonObject, input){
   let script = jsonObject.script;
   switch (input){
     case "inicio":
-      chatbot_response_text(script.inicio);
+      chatbot_response_text(script.script_inicial);
       break
     case "ajuda":
       chatbot_response_text(script.ajuda.script_ajuda);
