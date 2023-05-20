@@ -69,6 +69,7 @@ function search_memory(jsonObject, input){
     case "faq":
       for(i=0; i<3; i++){
         chatbot_response_text(script.ajuda.faq[i][0]);
+        chatbot_response_text(script.ajuda.faq[i][1])
       }
       break
     case "site":
