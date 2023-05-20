@@ -11,7 +11,7 @@ const chatbot_window = document.querySelector("div[class='chatbot_window']");
 const chatbot_button = document.getElementById('botao')
 const chatbot_input = document.getElementById('chatbot_input_text');
 const chatbot_text = document.getElementById('chatbot_text_id');
-const chatbot_memory = "chatbot_memory.json";
+const chatbot_memory = "https://raw.githubusercontent.com/ReiVipX/Projeto_Chatbot/main/chatbot_memory.json?token=GHSAT0AAAAAACCA7RAC634QMQTUB5JURRKCZDJJYPQ";
 
 //
 //
@@ -67,7 +67,7 @@ function search_memory(jsonObject, input){
       chatbot_response_text(script.ajuda.script_ajuda);
       break
     case "faq":
-      for(i=0; i<3; i++){
+      for(i=0; i<99999; i++){
         chatbot_response_text(script.ajuda.faq[i][0]);
         chatbot_response_text(script.ajuda.faq[i][1])
       }
