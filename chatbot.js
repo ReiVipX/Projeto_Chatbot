@@ -73,7 +73,7 @@ function search_memory(jsonObject, input){
       }
       break
     case "site":
-      chatbot_response_text(script.ajuda.site[0][0]);
+      chatbot_response_text(script.ajuda.sobre_site[0][0]);
       break
     case "contatos":
       for(i=0; i<3; i++){
@@ -82,7 +82,13 @@ function search_memory(jsonObject, input){
       
       break
     case "recomendar":
-      chatbot_response_text();
+      let x = Math.floor(Math.random() * 10)
+      chatbot_response_text(script.recomendar[x][1]);
+      break
+    case "curiosidades":
+      for(i=0; i<8; i++){
+        chatbot_response_text(script.curiosidades[i]);
+      } 
       break
     default:
       chatbot_response_text(script.script_default);

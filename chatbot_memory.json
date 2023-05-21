@@ -24,28 +24,33 @@
                 ["Quais são as opções de idioma disponíveis nos jogos do site?", "texto_resposta1"],
                 ["O site oferece demos ou versões de teste dos jogos?", "texto_resposta1"]
             ],
-            "sobre_site":[
-                ["texto_pergunta1", "texto_resposta1"],
-                ["texto_pergunta1", "texto_resposta1"],
-                ["texto_pergunta1", "texto_resposta1"]
-            ],
             "contatos":[
-                "texto_contato1",
-                "texto_contato2",
-                "texto_contato3"
+                "+55119375-8492",
+                "+55112739-3455",
+                "suporte@kalango.com"
+            ],
+            "curiosidades":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
             ]
         },
         "recomendar":[
-            [1, "The Witcher 3: Wild Hunt - Um RPG de mundo aberto com uma história envolvente e rica em detalhes."],
-            [2, "Overwatch - Um jogo de tiro em equipe com heróis únicos e emocionantes partidas multiplayer."],
-            [3, "Stardew Valley - Um jogo de simulação relaxante onde você pode administrar sua própria fazenda e interagir com a comunidade local."],
-            [4, "Grand Theft Auto V - Um jogo de ação em mundo aberto com uma história cativante e possibilidades infinitas de exploração."],
-            [5, "Celeste - Um jogo de plataforma desafiador com uma narrativa inspiradora sobre superar obstáculos."],
-            [6, "Minecraft - Um jogo de construção e exploração onde você pode criar seu próprio mundo e desfrutar de aventuras ilimitadas."],
-            [7, "FIFA 22 - Um jogo de futebol realista com gráficos impressionantes e jogabilidade autêntica."],
-            [8, "The Legend of Zelda: Breath of the Wild - Um jogo de ação e aventura com um vasto mundo aberto para explorar e desafios emocionantes."],
-            [9, "Animal Crossing: New Horizons - Um jogo relaxante de simulação de vida onde você pode criar sua própria ilha paradisíaca e interagir com adoráveis personagens."],
-            [10, "Dark Souls III - Um desafiador RPG de ação com combates intensos e um mundo sombrio e atmosférico."]
+            [0, "The Witcher 3: Wild Hunt - Um RPG de mundo aberto com uma história envolvente e rica em detalhes."],
+            [1, "Overwatch - Um jogo de tiro em equipe com heróis únicos e emocionantes partidas multiplayer."],
+            [2, "Stardew Valley - Um jogo de simulação relaxante onde você pode administrar sua própria fazenda e interagir com a comunidade local."],
+            [3, "Grand Theft Auto V - Um jogo de ação em mundo aberto com uma história cativante e possibilidades infinitas de exploração."],
+            [4, "Celeste - Um jogo de plataforma desafiador com uma narrativa inspiradora sobre superar obstáculos."],
+            [5, "Minecraft - Um jogo de construção e exploração onde você pode criar seu próprio mundo e desfrutar de aventuras ilimitadas."],
+            [6, "FIFA 22 - Um jogo de futebol realista com gráficos impressionantes e jogabilidade autêntica."],
+            [7, "The Legend of Zelda: Breath of the Wild - Um jogo de ação e aventura com um vasto mundo aberto para explorar e desafios emocionantes."],
+            [8, "Animal Crossing: New Horizons - Um jogo relaxante de simulação de vida onde você pode criar sua própria ilha paradisíaca e interagir com adoráveis personagens."],
+            [9, "Dark Souls III - Um desafiador RPG de ação com combates intensos e um mundo sombrio e atmosférico."]
         ]
     },
     "biblioteca_palavras":{
