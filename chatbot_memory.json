@@ -1,4 +1,5 @@
-"script":{
+{
+    "script":{
         "script_inicial": "BEM VINDO(A), A Kalango story, Para iniciar a conversa digite *Ajuda*",
         "script_default": "Desculpe, Digite novamente",
         "ajuda":{
