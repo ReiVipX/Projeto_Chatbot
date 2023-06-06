@@ -1,6 +1,6 @@
 {
     "script":{
-        "script_inicial": "Olá! Meu nome é Jarvis e estarei te atendendo hoje. Para iniciar a conversa digite *Iniciar*",
+        "script_inicial": "Olá! Meu nome é Jarvis e estarei te atendendo hoje. Para iniciar a conversa digite *Iniciar*, a qualquer momento você pode digitar *menu* para voltar a mensagem inicial.",
         "script_default": "Desculpe, não consegui entender, você pode tentar digitar novamente ou escrever *menu* para retornar a mensagem inicial",
         "ajuda":{
             "script_ajuda":"Você pode checar algumas perguntas frequentes escrevendo *FAQ*, caso queira uma recomendação de um jogo aleatório digite *RECOMENDAR*, se quiser apenas conversar digite *CURIOSIDADES* e posso te mostrar algumas curiosidades sobre o universo GEEK!",

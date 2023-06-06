@@ -77,7 +77,7 @@ function search_memory(jsonObject, input){
       break
     case "menu":
       document.getElementById("chatbot_text_id").querySelectorAll("p").forEach(p => {p.parentNode.removeChild(p)});
-      searchJsonFile("iniciar")
+      searchJsonFile("inicio")
       break
     case "faq":
       for(i=0; i<99999; i++){
@@ -93,11 +93,11 @@ function search_memory(jsonObject, input){
       }
       break
     case "recomendar":
-      let x = Math.floor(Math.random() * 10)
+      let x = Math.floor(Math.random() * 20)
       chatbot_response_text(script.recomendar[x][1]);
       break
     case "curiosidades":
-      let y = Math.floor(Math.random() * 9)
+      let y = Math.floor(Math.random() * 20)
         chatbot_response_text(script.ajuda.curiosidades[y]);
       break
     default:
