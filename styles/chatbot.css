@@ -105,3 +105,32 @@ p#chatbot_exit{
     height: 80%;
     width: 90%;
 }
+
+
+
+@media only screen and (max-width: 900px) {
+    .chatbot_window{
+        display: none;
+        text-align: center;
+        justify-items: center;
+        flex-direction: column;
+        background-color: #000000f6;
+        height: 80vh;
+        width: 80vw;
+        border: 3px solid var(--third-color);
+        transition:all ease .3s;
+    }  
+}
+@media only screen and (max-width: 600px) {
+    .chatbot_window{
+        display: none;
+        text-align: center;
+        justify-items: center;
+        flex-direction: column;
+        background-color: #000000f6;
+        height: 95vh;
+        width: 90vw;
+        border: 3px solid var(--third-color);
+        transition:all ease .3s;
+    }
+}

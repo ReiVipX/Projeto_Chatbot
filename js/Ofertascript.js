@@ -25,10 +25,12 @@ const fecharModal = () => {
 const botoesFechar = () => {
 
     // BOTOES FECHAR MODAL
-    selecionaTodos('.ProdutoInfo--cancelButton, .ProdutoInfo--cancelMobileButton').forEach((item) => {
+    selecionaTodos('.ProdutoInfo--cancelButton').forEach((item) => {
         item.addEventListener('click', fecharModal)
     })
 }
+
+//FUNCAO QUE PUXA AS INFORMACOES DO PRODUTO E ADICIONA NA DIV
 const preencheDadosProduto = (OfertaItem, item,index ) => {
     OfertaItem.setAttribute('data-key', index)
     OfertaItem.querySelector('data-key', index)
@@ -38,31 +40,30 @@ const preencheDadosProduto = (OfertaItem, item,index ) => {
     OfertaItem.querySelector('.Produto-item--name').innerHTML = item.name
     
 }
+//FUNCAO QUE ADICIONA AS INFORMAÇOES DO PRODUTO NA JANELA MODAL
 const preencheDadosModal = (item) => {
-    // document.querySelector('.pizzaBig img').src = item.img
-    // document.querySelector('.pizzaInfo h1').innerHTML = item.name
-    // document.querySelector('.pizzaInfo--desc').innerHTML = item.description
-    // document.querySelector('.pizzaInfo--actualPrice').innerHTML = `R$ ${item.price.toFixed(2)}`
     seleciona('.ProdutoBig img').src = item.img
     seleciona('.ProdutoInfo h1').innerHTML = item.name
     seleciona('.ProdutoInfo--actualPrice s').innerHTML = `R$ ${item.price.toFixed(2)}`
     seleciona('.ProdutoInfo--actualPrice2').innerHTML = `R$ ${(item.price-(item.desc*item.price)).toFixed(2)}`
 }
+//identificação dos produtos
 const pegarKey = (e) => {
     // .closest retorna o elemento mais proximo que tem a class que passamos
-    // do .pizza-item ele vai pegar o valor do atributo data-key
+    // do .Produto-item ele vai pegar o valor do atributo data-key
     let key = e.target.closest('.Produto-item').getAttribute('data-key')
     console.log('Produto clicada ' + key)
     console.log(ofertaJson[key])
 
-    // garantir que a quantidade inicial de pizzas é 1
+    // garantir que a quantidade inicial de produtos é 1
     quantProdutos = 1
 
-    // Para manter a informação de qual pizza foi clicada
+    // Para manter a informação de qual produtos foi clicada
     modalKey = key
 
     return key
 }
+
 const mudarQuantidade = () => {
     // Ações nos botões + e - da janela modal
     seleciona('.ProdutoInfo--qtmais').addEventListener('click', () => {
@@ -96,12 +97,12 @@ const adicionaNoCarrinho= () => {
             // se encontrar aumente a quantidade
             cart[key].qt += quantProdutos
         } else {
-            // adicionar objeto pizza no carrinho
+            // adicionar objeto produto no carrinho
             let Produto = {
                 identificador,
                 id: ofertaJson[modalKey].id,
                 qt: quantProdutos,
-                price: ofertaJson[modalKey].price // price: price
+                price: ofertaJson[modalKey].price
             }
             cart.push(Produto)
             console.log(Produto)
@@ -260,23 +261,13 @@ ofertaJson.map((item, index) =>{
     OfertaItem.addEventListener('click', (e)   =>{
         e.preventDefault()
         console.log('Clicou')
-        
-
-        let chave = pegarKey(e)
 
         //abrir a janela modal
-        //document.querySelector('.ProdutoWindowArea').style.display = 'flex'
         abrirModal()
         //preenchimento dos dados
-        //document.querySelector('.ProdutoInfo h1').innerHTML = item.name
-        //document.querySelector('.ProdutoBig img').src = item.img
-       // document.querySelector('.ProdutoInfo--actualPrice').innerHTML =`R$ ${item.price.toFixed(2)}`
        preencheDadosModal(item)
-
        seleciona('.ProdutoInfo--qt').innerHTML = quantProdutos
-        
-        
-        
+
     })
 
     botoesFechar()
