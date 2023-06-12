@@ -1,0 +1,107 @@
+:root {
+    --background-color: #000000;
+    --main-color: #f316b4;
+    --secundary-color: 5px 42px;
+    --third-color: #9b1174;
+    --text-color: whitesmoke;
+}
+/*  
+
+
+    BOTÃO CHATBOT
+
+
+*/
+.chatbot{
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw;
+    z-index: 100;
+}
+#botao{
+    display: flex;
+}
+#botao img{
+    width: 5vh;
+    height: 5vh;
+    padding: 10px 10px 10px 10px;
+    border: var(--third-color) solid 10px;
+    background-color: #000000;
+    border-radius: 40%;
+}
+#botao img:hover{
+    width: 8vh;
+    height: 8vh;
+    transition: ease .3s;
+}
+
+
+
+
+
+/*  
+
+
+    INTERFACE CHATBOT
+
+
+*/
+.chatbot_window{
+    display: none;
+    text-align: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: #000000f6;
+    height: 80vh;
+    width: 50vw;
+    border: 3px solid var(--third-color);
+    transition:all ease .3s;
+}
+.chatbot_bar{  
+    display: flex;
+    height: 25px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+p#chatbot_name{
+    color: var(--third-color);
+    margin-left: 5px;
+    font-weight: bolder;
+}
+p#chatbot_exit{
+    margin-right: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bolder;
+}
+.chatbot_text{
+    overflow: auto;
+    font-weight: bolder;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--third-color);
+    border-top: 3px solid var(--third-color);
+}
+.chatbot_text p{
+    font-size: 1rem;
+    background-color: var(--third-color);
+    margin: 10px 20px 0px 20px;
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+.chatbot_input{
+    height: 14%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chatbot_input input{
+    outline: 1px var(--main-color);
+    outline-style: groove;
+    height: 80%;
+    width: 90%;
+}

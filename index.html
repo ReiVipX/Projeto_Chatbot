@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalango Store</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/chatbot.css">
+    <link rel="shortcut icon" href="/imgs/Imagens_site/pngwing.com.png" type="image/x-icon">
+</head>
+<header>
+    <a><img class="logo" src="/imgs/Imagens_site/pngwing.com.png" alt="lagartixa"></a>
+    <nav>
+        <a class="link" href="/index.html">Página Inicial</a>
+        <a class="link"href="/html/pag_produtos.html">Produtos</a>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </nav>
+</header>
+<body>    
+    <br> 
+        <div class="compra_finalizada">
+            <div class="compra_finalizada_texto">
+                <h1>OBRIGADO PELA COMPRA!</h1>
+            </div>
+        </div>
+        <main class="letra-rosa">
+            <div class="Coluna">
+                <h1>Bem-vindos a nossa Loja</h1>
+                <h2>De uma olhada em nossas promoções!</h2>
+                <div class="Produto-area"></div>
+            </div>
+        <aside>
+            <div class="menu-closer"><p>x</p></div>
+            <div class="blank-menu">
+                <h1>Você ainda não possui nada no carrinho!</h1>
+            </div>
+            <div class="cart--area">
+                <h1>Seu Carrinho</h1>
+                <div class="cart"></div>
+                <div class="cart--details">
+                    <div class="cart--totalitem subtotal">
+                        <span>Subtotal</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem desconto">
+                        <span>Desconto</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem total big">
+                        <span>Total</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--finalizar">Finalizar a compra</div>
+                </div>
+            </div>
+        </aside>
+        </main>
+        <!--modelos dos produtos na lista e no carrinho-->
+        <div class="models">
+            <!--Produtos na lista-->
+            <div class="Produto-item">
+                <a href="">
+                    <div class="Produto-item--img"><img src="" /></div>
+                    <div class="Produto-item--add">+</div>
+                </a>
+                <div class="Produto-item--name">--</div>
+                <div class="Produto-item--price"><s>R$ --</s></div>
+                <div class="Produto-item--price2">R$ --</div>      
+            </div>
+           
+            <!--Produto no Carrinho-->
+            <div class="cart--item">
+                <img src="" />
+                <div class="cart--item-nome">--</div>
+                <div class="cart--item--qtarea">
+                    <button class="cart--item-qtmenos">-</button>
+                    <div class="cart--item--qt">1</div>
+                    <button class="cart--item-qtmais">+</button>
+                </div>
+            </div>
+        </div>
+        <!--aside do carrinho-->
+       
+
+        <!-- janela modal .ProdutoWindowArea -->
+    <div class="ProdutoWindowArea">
+        <div class="ProdutoWindowBody">
+
+            <div class="ProdutoBig">
+                <img src="" />
+            </div>
+            <div class="ProdutoInfo">
+                <h1>--</h1>
+                <div class="ProdutoInfo--pricearea">
+                    <div class="ProdutoInfo--sector">Preço</div>
+                    <div class="ProdutoInfo--price">
+                        <div class="ProdutoInfo--actualPrice"><s>$ --</s></div>
+                        <div class="ProdutoInfo--actualPrice2"><s>$ --</s></div>
+                        <div class="ProdutoInfo--qtarea">
+                            <button class="ProdutoInfo--qtmenos">-</button>
+                            <div class="ProdutoInfo--qt">1</div>
+                            <button class="ProdutoInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProdutoInfo--addButton">Adicionar ao carrinho</div>
+                <div class="ProdutoInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot">
+        <div id="botao">
+            <a onclick="open_chatbot()"><img src="/imgs/Imagens_site/Chat.png" alt="chat"></a>
+        </div>
+        <div class="chatbot_window">
+            <div class="chatbot_bar">
+                <p id="chatbot_name">JARVIS</p>
+                <p id="chatbot_exit" onclick="exit_chatbot()">X</p>
+            </div>
+            <div id="chatbot_text_id" class="chatbot_text">
+            </div>
+            <div class="chatbot_input">
+                <input type="text" id="chatbot_input_text">
+            </div>     
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="/imgs/Imagens_site/pngwing.com.png" alt="">
+            <p>
+                <a href="/html/error_page.html">Política de Privacidade</a>
+                <a href="/html/error_page.html">Central de Atendimento</a>
+                <a href="/html/pag_sobre.html">Sobre nós</a>
+            </p>
+            <p>kalango s.a. / CNPJ: 00.000.000/0006-60 / Inscrição Estadual: 10.577.08-5 / Endereço Rua Belo Redondo, 101 - São Paulo, SP - +55119375-8492 / fale com a gente
+                <br><br>
+                Preços e condições de pagamento exclusivos para compras via internet. Ofertas válidas até o término de nossos estoques para internet. Vendas sujeitas à análise e confirmação de dados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/js/chatbot.js"></script>
+    <script src="/json/Ofertas.js"></script>
+    <script src="/js/Ofertascript.js"></script> 
+</body>
+</html> 

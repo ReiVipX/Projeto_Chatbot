@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalango Store</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/chatbot.css">
+     <link rel="shortcut icon" href="/imgs/Imagens_site/pngwing.com.png" type="image/x-icon">
+</head>
+<header>
+    <a href="/index.html"><img class="logo" src="/imgs/Imagens_site/pngwing.com.png" alt="lagartixa"></a>
+    <nav>
+        <a class="link" href="/index.html">Página Inicial</a>
+        <a class="link"href="/html/pag_produtos.html">Produtos</a>
+    </nav>
+</header>
+<body>
+    <div class="error">
+        <h1>APENAS UMA PÁGINA DEMONSTRATIVA!</h1>
+    </div>
+    <div class="chatbot">
+        <div id="botao">
+            <a onclick="open_chatbot()"><img src="/imgs/Imagens_site/Chat.png" alt="chat"></a>
+        </div>
+        <div class="chatbot_window">
+            <div class="chatbot_bar">
+                <p id="chatbot_name">JARVIS</p>
+                <p id="chatbot_exit" onclick="exit_chatbot()">X</p>
+            </div>
+            <div id="chatbot_text_id" class="chatbot_text">
+            </div>
+            <div class="chatbot_input">
+                <input type="text" id="chatbot_input_text">
+            </div>     
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="/imgs/Imagens_site/pngwing.com.png" alt="">
+            <p>
+                <a href="/html/error_page.html">Política de Privacidade</a>
+                <a href="/html/error_page.html">Central de Atendimento</a>
+                <a href="/html/pag_sobre.html">Sobre nós</a>
+            </p>
+            <p>kalango s.a. / CNPJ: 00.000.000/0006-60 / Inscrição Estadual: 10.577.08-5 / Endereço Rua Belo Redondo, 101 - São Paulo, SP - +55119375-8492 / fale com a gente
+                <br><br>
+                Preços e condições de pagamento exclusivos para compras via internet. Ofertas válidas até o término de nossos estoques para internet. Vendas sujeitas à análise e confirmação de dados.
+            </p>
+        </div>
+    </footer>
+    <script src="/js/chatbot.js"></script>
+</body>
+</html>
