@@ -11,8 +11,7 @@ const chatbot_window = document.querySelector("div[class='chatbot_window']");
 const chatbot_button = document.getElementById('botao')
 const chatbot_input = document.getElementById('chatbot_input_text');
 const chatbot_text = document.getElementById('chatbot_text_id');
-const chatbot_memory = "https://raw.githubusercontent.com/ReiVipX/Projeto_Chatbot/main/Mark1-Projeto/chatbot_memory.json"
-//const chatbot_memory = "/Mark1-Projeto/chatbot_memory.json"
+const chatbot_memory = "https://raw.githubusercontent.com/ReiVipX/Projeto_Chatbot/main/json/chatbot_memory.json"
 
 //
 //
